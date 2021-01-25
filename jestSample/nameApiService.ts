@@ -3,11 +3,11 @@ import axios from "axios";
 export class NameApiService {
   private MAX_LENGTH = 4;
   public constructor() {}
+  /*const { data } = await axios.get(
+    "https://random-data-api.com/api/name/random_name"
+  );*/
 
-  public async getFirstName(): Promise<string> {
-    const { data } = await axios.get(
-      "https://random-data-api.com/api/name/random_name"
-    );
+  public async getFirstName(data: { [key: string]: string }): Promise<string> {
     const firstName = data.first_name as string;
 
     if (firstName.length > this.MAX_LENGTH) {

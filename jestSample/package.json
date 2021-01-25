@@ -26,5 +26,11 @@
     "prettier": "^2.1.2",
     "ts-jest": "^26.4.4",
     "typescript": "^4.0.5"
-  }
+  },
+  "name": "jestsample",
+  "version": "1.0.0",
+  "main": "jest.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
